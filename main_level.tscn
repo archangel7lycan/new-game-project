@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://bm22x6r7oj4tb"]
+
+[ext_resource type="Texture2D" uid="uid://c663v85wg7o8m" path="res://characters/DinoSprites - mort.png" id="1_6614m"]
+
+[node name="main level" type="Sprite2D"]
+position = Vector2(354, 105)
+texture = ExtResource("1_6614m")
+
+[node name="Node2D" type="Node2D" parent="."]
