@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://cugbu4w0rbbx5"]
+
+[ext_resource type="Texture2D" uid="uid://2b3878ajq546" path="res://tilesets/props.png" id="1_mi635"]
+
+[node name="Platform" type="AnimatableBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-0.4999857, -2.3841858e-07)
+scale = Vector2(0.9975962, 1)
+texture = ExtResource("1_mi635")
