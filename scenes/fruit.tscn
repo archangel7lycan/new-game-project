@@ -1,9 +1,13 @@
 [gd_scene load_steps=5 format=3 uid="uid://r6of2uoy1a3m"]
 
-[ext_resource type="Texture2D" uid="uid://duh3tdkrqbvqe" path="res://items/fruit.png" id="1_svk5y"]
+[ext_resource type="Texture2D" uid="uid://duh3tdkrqbvqe" path="res://items/fruit.png" id="1_lfepc"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_pa2l1"]
+radius = 5.0
+height = 12.0
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_nhxoo"]
-atlas = ExtResource("1_svk5y")
+atlas = ExtResource("1_lfepc")
 region = Rect2(32, 32, 16, 16)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_5ieuq"]
@@ -17,14 +21,10 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_pa2l1"]
-radius = 5.0
-height = 12.0
-
 [node name="Fruit" type="Area2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_pa2l1")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_5ieuq")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatedSprite2D"]
-shape = SubResource("CapsuleShape2D_pa2l1")
